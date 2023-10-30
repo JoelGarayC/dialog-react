@@ -1,0 +1,37 @@
+.spinner {
+  align-items: center;
+  animation: showSpin 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  min-height: auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+.spinner > div {
+  animation: spin 1s linear infinite;
+  background-color: transparent;
+  border: 0.2rem solid var(--primary-color, #646cff);
+  border-radius: 50%;
+  border-right-color: transparent;
+  height: 1.5rem;
+  margin: 1rem;
+  width: 1.5rem;
+}
+
+.spinnerPage {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes showSpin {
+  0% {
+    opacity: 0;
+  }
+}
